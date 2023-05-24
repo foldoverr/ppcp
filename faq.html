@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FAQ</title>
+    <style>
+      .header {
+        background-image: url(./assets/picture/вопросы.png);
+        width: 100%;
+        max-width: 1920px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <p
+        style="
+          font-family: 'Myriad Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 75px;
+          line-height: 90px;
+          color: white;
+          text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+        "
+      >
+        ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+      </p>
+    </div>
+    <div
+      style="
+        margin-top: 100px;
+        display: flex;
+        width: 100%;
+        max-width: 1920px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <p
+        style="
+          font-family: 'Myriad Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 48px;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.017em;
+          text-indent: 1.25px;
+          width: 70%;
+          color: #1a548c;
+        "
+      >
+        Ниже приведен список часто задаваемых вопросов и ответов на них для
+        иностранных абитуриентов СевГУ:
+      </p>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      "
+    >
+      <button
+        onclick="show_list()"
+        id="butid"
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Как я могу поступить в СевГУ?
+
+          <img
+            id="arrow1"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide"
+        id="hide"
+        style="width: 1000px; border-radius: 25px; border: 3px solid #001589"
+      >
+        <pre style="margin-top: 20px" class="textxd">
+Для поступления в СевГУ иностранным абитуриентам необходимо подать 
+заявление на сайте университета и пройти отборочные испытания, включающие в себя 
+тестирование по предметам, связанным с выбранным направлением, и собеседование на 
+английском языке.
+</pre
+        >
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list2()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Какие документы необходимо предоставить для поступления?
+
+          <img
+            id="arrow2"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide2"
+        id="hide2"
+        style="width: 1000px; border-radius: 25px; border: 3px solid #001589"
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          Для поступления необходимо предоставить следующие документы: копию
+          паспорта, копию свидетельства о рождении, копию документа об
+          образовании, переведенную на русский язык, и сертификат об уровне
+          владения английским языком, если это не является языком обучения в
+          вашей стране.
+        </p>
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list3()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Какие языковые требования нужно выполнить для поступления в СевГУ?
+
+          <img
+            id="arrow3"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide3"
+        id="hide3"
+        style="
+          width: 1000px;
+          border-radius: 25px;
+          border: 3px solid #001589;
+          margin-bottom: 0px;
+        "
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          Для поступления в СевГУ на англоязычные программы обучения необходимо
+          иметь сертификат IELTS (Academic) с общим баллом не менее 6,0 или
+          TOEFL с общим баллом не менее 80.
+        </p>
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list4()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Какие программы обучения предлагает СевГУ для иностранных студентов?
+
+          <img
+            id="arrow4"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide4"
+        id="hide4"
+        style="
+          width: 1000px;
+          border-radius: 25px;
+          border: 3px solid #001589;
+          margin-bottom: 0px;
+        "
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          СевГУ предлагает множество программ обучения на английском языке в
+          разных областях, включая магистерские программы по бизнесу,
+          информатике, инженерным наукам и другим областям.
+        </p>
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list5()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Каковы расходы на обучение и проживание в СевГУ?
+
+          <img
+            id="arrow5"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide5"
+        id="hide5"
+        style="
+          width: 1000px;
+          border-radius: 25px;
+          border: 3px solid #001589;
+          margin-bottom: 0px;
+        "
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          Расходы на обучение и проживание в СевГУ зависят от выбранной
+          программы обучения и уровня комфорта, который вы хотите иметь во время
+          учебы. Обычно, стоимость обучения для иностранных студентов составляет
+          от 1600 до 4000 долларов в год в зависимости от выбранной программы.
+          Расходы на проживание также зависят от уровня комфорта и могут
+          составлять от 100 до 500 долларов в месяц.
+        </p>
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list6()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Есть ли возможность получить стипендию для иностранных студентов?
+
+          <img
+            id="arrow6"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide6"
+        id="hide6"
+        style="
+          width: 1000px;
+          border-radius: 25px;
+          border: 3px solid #001589;
+          margin-bottom: 0px;
+        "
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          Да, в СевГУ есть программы стипендий для иностранных студентов,
+          которые обеспечивают финансовую помощь на обучение и проживание.
+          Обычно, для получения стипендии нужно иметь высокие академические
+          достижения и успешно проходить конкурсный отбор.
+        </p>
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list7()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Каковы возможности трудоустройства после окончания обучения в СевГУ?
+
+          <img
+            id="arrow7"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide7"
+        id="hide7"
+        style="
+          width: 1000px;
+          border-radius: 25px;
+          border: 3px solid #001589;
+          margin-bottom: 0px;
+        "
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          СевГУ имеет хорошие связи с местными работодателями, как в России, так
+          и за ее пределами. Иностранные студенты, которые успешно завершают
+          программы обучения, могут получить предложения о работе в
+          компаниях-партнерах университета. Кроме того, выпускники СевГУ имеют
+          хорошие шансы на трудоустройство в различных отраслях благодаря
+          высокому уровню образования и имиджу университета.
+        </p>
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list8()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Как поддерживается культурная адаптация иностранных студентов в СевГУ?
+
+          <img
+            id="arrow8"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide8"
+        id="hide8"
+        style="
+          width: 1000px;
+          border-radius: 25px;
+          border: 3px solid #001589;
+          margin-bottom: 0px;
+        "
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          В СевГУ есть отдел по работе с иностранными студентами, который
+          организует различные мероприятия для поддержки культурной адаптации
+          иностранных студентов, включая культурные мероприятия, языковые курсы
+          и консультации по вопросам адаптации.
+        </p>
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list9()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Каковы возможности для иностранных студентов для участия в научных и
+          исследовательских проектах в СевГУ?
+
+          <img
+            id="arrow9"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide9"
+        id="hide9"
+        style="
+          width: 1000px;
+          border-radius: 25px;
+          border: 3px solid #001589;
+          margin-bottom: 0px;
+        "
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          СевГУ активно поддерживает научные и исследовательские проекты, и
+          иностранные студенты имеют возможность участвовать в таких проектах
+          вместе с российскими студентами и учеными. Это может быть отличной
+          возможностью для иностранных студентов расширить свои знания и
+          получить практический опыт работы в научной сфере.
+        </p>
+      </div>
+
+      <button
+        style="
+          background: transparent;
+          border: none;
+          padding: 0px;
+          width: 1000px;
+        "
+        onclick="show_list10()"
+        id="butid"
+      >
+        <p
+          class="phover"
+          style="
+            border: 2px solid #001589;
+            font-size: 30px;
+            color: #001589;
+            padding: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Myriad Pro';
+          "
+        >
+          Каковы возможности для иностранных студентов для участия в
+          студенческой жизни в СевГУ?
+
+          <img
+            id="arrow10"
+            src="./assets/buttons/arrownext.png"
+            style="width: 40px; height: 40px; display: flex"
+          />
+        </p>
+      </button>
+
+      <div
+        class="hide10"
+        id="hide10"
+        style="
+          width: 1000px;
+          border-radius: 25px;
+          border: 3px solid #001589;
+          margin-bottom: 0px;
+        "
+      >
+        <p
+          class="textxd"
+          style="
+            margin-top: 31px;
+            margin-left: 48px;
+            margin-right: 40px;
+            margin-bottom: 31px;
+          "
+        >
+          В СевГУ есть множество студенческих организаций и клубов, которые
+          занимаются различными видами деятельности, от спорта до культурных
+          мероприятий. Иностранные студенты могут присоединиться к любому из
+          этих клубов и организаций, чтобы расширить свой круг общения и
+          насладиться студенческой жизнью в СевГУ. Кроме того, университет
+          организует различные мероприятия для студентов, включая спортивные
+          соревнования, концерты и культурные мероприятия, которые доступны для
+          всех студентов, включая иностранных.
+        </p>
+      </div>
+    </div>
+    <div style="display: flex; margin-left: 250px; margin-top: 100px;">
+      <a
+        style="
+          font-family: 'Myriad Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 48px;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.017em;
+          text-indent: 1.25px;
+
+          color: #1a548c;
+        "
+        href="./index.html#konscentr"
+        >Остались еще вопросы?<br />Тогда обратитесь с ними в консультационный
+        сервис</a
+      >
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 150px; margin-bottom: 120px;">
+        <a href="/index.html#questions">
+        <button
+        id="butid"
+        class="phover2"
+        style="
+          background-image: url(./assets/picture/вопросы.png);
+          border: none;
+          padding: 0px;
+          width: 400px;
+          height: 220px;
+          border-radius: 25px;
+        "
+      >
+        <p
+          class="regular"
+          style="
+            font-size: 30px;
+            color: white;
+            padding-left: 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+          "
+        >
+          ВЕРНУТЬСЯ НА ГЛАВНУЮ СТРАНИЦУ
+        </p>
+      </button>
+    </a>
+    </div>
+  </body>
+  <script src="./scripts/faq.js"></script>
+</html>

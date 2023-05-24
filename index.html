@@ -167,7 +167,7 @@
       </div>
       <div style="height: 500px; display: flex; flex-direction: column">
         <button
-          class="btn"
+          
           style="
             background: transparent;
             border: none;
@@ -192,7 +192,7 @@
           </p>
         </button>
         <button
-          class="btn"
+          
           style="
             background: transparent;
             border: none;
@@ -218,7 +218,7 @@
           </a>
         </button>
         <button
-          class="btn"
+          
           style="
             background: transparent;
             border: none;
@@ -1416,9 +1416,11 @@ VLMurzenkova@sevsu.ru
         align-items: center;
       "
     >
-      <h1 class="bolttext" style="margin-left: 125px; font-size: 64px">
+    <a href="./faq.html">
+      <h1 class="bolttext" style="margin-left: 125px; font-size: 64px" id="questions">
         ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
       </h1>
+    </a>
     </div>
     <div style="margin-top: 50px; margin-left: 231px; margin-right: 151px">
       <p class="bolttext2" style="font-size: 32px; width: 100%">
@@ -1494,10 +1496,11 @@ VLMurzenkova@sevsu.ru
           ПОСТУПЛЕНИЕ В МАГИСТРАТУРУ
         </p>
       </button>
-      <a href="#contacts">
+      <a href="#contacts" style="text-decoration: none;">
         <button
-          id="butid"
-          class="phover2"
+          id="btn"
+          class="btn"
+      
           style="
             background-image: url(./assets/picture/вопросы.png);
             border: none;
@@ -1505,6 +1508,8 @@ VLMurzenkova@sevsu.ru
             width: 400px;
             height: 220px;
             border-radius: 25px;
+            text-decoration: none;
+            
           "
         >
           <p
@@ -1519,7 +1524,9 @@ VLMurzenkova@sevsu.ru
               flex-direction: row;
               justify-content: space-around;
               width: 90%;
+              text-decoration: none;
             "
+            id="konscentr"
           >
             ЗАДАТЬ ВОПРОС В КОНСУЛЬТАЦИОННЫЙ ЦЕНТР
           </p>
@@ -1589,6 +1596,72 @@ VLMurzenkova@sevsu.ru
         style="width: 500px; height: 30px"
       />
     </div>
+
+    <div class="modal" id="modal">
+    <div class="modal__box">
+      <div class="modal__title"><p style="margin: 0px; color: #003e82;">Есть вопросы? Задайте их нам!</p>
+        <div  class="modal__bottom" >
+        <a style="padding: 0px; background: none; color:red; font-size: 30px;" href="#" class="btn--close" id="btn_close"><img src="./assets/icons/x.png"/></a>
+      </div></div>
+      
+      <div class="modal__info">
+        <form name="feedback" method="post" id="form_feedback" style="display: flex; flex-direction: column; justify-content: flex-start; margin-left: 80px;">
+          <div class="input_box">
+            <p style="margin: 0px;">Фамилия *</p>
+            <input style="margin:0px; margin-top: 8px; width: 700px; padding: 10px; border: 1px solid grey; border-radius: 3px;" type="text" placeholder="Фамилия" />
+          </div>
+          <div class="input_box">
+            <p style="margin: 0px;">Имя</p>
+            <input style="margin:0px; margin-top: 8px; width: 700px; padding: 10px; border: 1px solid grey; border-radius: 3px;" type="text" placeholder="Имя" />
+          </div>
+          <div class="input_box">
+            <p style="margin: 0px;">Отчество</p>
+            <input style="margin:0px; margin-top: 8px; width: 700px; padding: 10px; border: 1px solid grey; border-radius: 3px;" type="text" placeholder="Отчество" />
+          </div>
+          <div class="input_box">
+            <p style="margin: 0px;">Учебное подразделение *</p>
+            <select style="margin:0px; margin-top: 8px; width: 722px; padding: 10px; border: 1px solid grey; border-radius: 3px;" name="institutes" id="institutes">
+              <option value="iit">Институт информационных технологий</option>
+              <option value="iyaeip">Институт ядерной энергии и промышленности</option>
+              <option value="gpi">Гуманитарно-педагогический институт</option>
+              <option value="pi">Политехнический институт</option>
+              <option value="ui">Юридический институт</option>
+              <option value="mi">Морской институт</option>
+              <option value="iriits">Институт радиоэлектроники и интеллектуальных технических систем</option>
+              <option value="ifeiu">Институт финансов, экономики и управления</option>
+              <option value="idpo">Институт дополнительного профессионального образования</option>
+              <option value="mk">Морской колледж</option>
+              <option value="cfkis">Центр физическая культура и спорт</option>
+              <option value="ionimo">Институт общественных наук и международных отношений</option>
+              <option value="irg">Институт развития города</option>
+              <option value="ipi">Институт перспективных исследований</option>
+
+            </select>
+          </div>
+          <div class="input_box">
+            <p style="margin: 0px;">E-mail *</p>
+            <input style="margin:0px; margin-top: 8px; width: 700px; padding: 10px; border: 1px solid grey; border-radius: 3px;" type="text" placeholder="E-mail" />
+          </div>
+          <div class="input_box">
+            <p style="margin: 0px;">Контактный телефон</p>
+            <input style="margin:0px; margin-top: 8px; width: 700px; padding: 10px; border: 1px solid grey; border-radius: 3px;" type="text" placeholder="8 (000) 000-00-00" />
+          </div>
+          <div class="input_box">
+            <p style="margin: 0px;">Содержание вопроса *</p>
+            <textarea style="margin:0px; margin-top: 8px; width: 700px; padding: 10px; border: 1px solid grey; border-radius: 3px; height: 100px;" placeholder="" ></textarea>
+          </div>
+          <input style="margin-top: 20px;" class="btn" type='submit' value='Отправить'>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+
+  
+
+
+
+
     <div class="footer" style="margin-top: 50px">
       <div style="display: flex; width: 70%">
         <div style="display: flex; flex-direction: column; width: 100%">
@@ -1773,8 +1846,42 @@ VLMurzenkova@sevsu.ru
         /></a>
       </div>
     </div>
+    <div class="btn-up btn-up_hide" id="btnsecond"></div>
   </body>
+<script>// считываем все элементы
+  const body = document.body;
+  const btn = document.querySelector("#btn");
+  const btn2 = document.querySelector("#btnsecond");
+  const btnClose = document.querySelector("#btn_close");
+  const modal = document.querySelector("#modal");
+  
+  // обработчики клика на кнопки
+  btn.addEventListener("click", btnHandler);
+btn2.addEventListener("click",btnHandler);
 
+  btnClose.addEventListener("click", btnCloseHandler);
+  
+  // при нажатии на кнопку Click me
+  function btnHandler(e) {
+    e.preventDefault();
+    body.classList.add("lock"); // блокируем скролл веб-страницы
+    modal.classList.add("modal--open"); // открываем модальное окно
+  }
+  
+  // при нажатии на кнопку Close
+  function btnCloseHandler(e) {
+    e.preventDefault();
+    body.classList.remove("lock"); // разблокируем скролл страницы
+    modal.classList.remove("modal--open"); // закрываем окно
+  }
+  
+  // при нажатии на пустое пространство - закрываем окно
+  window.addEventListener("click", function (e) {
+    if (e.target == modal) {
+      body.classList.remove("lock");
+      modal.classList.remove("modal--open");
+    }
+  });</script>
   <script src="./scripts/openblock.js"></script>
   <script src="./scripts/carousel.js"></script>
 </html>

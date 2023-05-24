@@ -209,6 +209,21 @@ a:hover {
 .hide5 {
   display: none;
 }
+.hide6 {
+  display: none;
+}
+.hide7 {
+  display: none;
+}
+.hide8 {
+  display: none;
+}
+.hide9 {
+  display: none;
+}
+.hide10 {
+  display: none;
+}
 .activearrow {
   transform: rotate(90deg);
 }
@@ -323,4 +338,152 @@ a.idTop:hover {
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
+}
+
+
+
+
+
+.modal {
+  display: none; /* По умолчанию окно закрыто */
+  z-index: 10; /* Чтобы сделать окно поверх всех элементов */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: scroll; /* При переполнении окна делаем скролл */
+  padding: 20px;
+}
+
+.modal--open {
+  display: flex; /* Модификатор для открытого окна */
+}
+
+.modal__box {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.modal__title {
+  display: flex;
+  color: #111;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  flex-direction: column-reverse;
+  justify-content: center;
+  font-family: "Myriad Pro";
+  font-style: normal;
+}
+
+.modal__info {
+  color: #111;
+  font-size: 16px;
+  
+}
+
+.modal__bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px;
+}
+
+.btn {
+  box-sizing: border-box;
+  display: block;
+  width: max-content;
+  background-color: #0066cc;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+
+  -webkit-transition: 1s ease;
+}
+
+.modal__bottom > .btn {
+  margin-right: 20px;
+}
+
+.modal__bottom > .btn:last-child {
+  margin-right: 0;
+}
+
+.modal__bottom > .btn--close {
+  background-color: #dedede;
+  color: #0066cc;
+}
+
+.lock {
+  overflow-y: hidden;
+}
+
+.btn:hover{
+
+  transition: 0.6s;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.btn-up {
+  /* фиксированное позиционирование */
+  position: fixed;
+  /* цвет фона */
+  background-color:none;
+  /* расстояние от правого края окна браузера */
+  right: 25px;
+  /* расстояние от нижнего края окна браузера */
+  bottom: 15px;
+  /* скругление верхнего левого угла */
+  border-top-left-radius: 0px;
+  /* скругление верхнего правого угла */
+  border-top-right-radius: 0px;
+  /* вид курсора */
+  cursor: pointer;
+  /* отображение элемента как flex */
+  display: flex;
+  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+  align-items: center;
+  /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+  justify-content: center;
+  /* ширина элемента */
+  width: 60px;
+  /* высота элемента */
+  height: 50px;
+}
+
+.btn-up::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url(./assets/icons/chat.png);
+}
+
+.btn-up_hide {
+  
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color:none;
+     /* цвет заднего фона при наведении */
+  }
+}
+
+.input_box{
+  font-family: "Myriad Pro2";
+  font-style: normal;
+  margin-top: 10px;
 }
